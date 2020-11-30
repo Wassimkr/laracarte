@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg static-top navbar-dark bg-dark">
-    <a class="navbar-brand mr-auto mr-lg-0" href="#">Laracarte</a>
+    <a class="navbar-brand mr-auto mr-lg-0" href="#">{{ config('app.name') }}</a>
     <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,8 +26,8 @@
             <a class="dropdown-item" href="#">Larachat</a>
           </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+        <li class="{{ set_active_route('contact_path') }}">
+            <a class="nav-link" href="{{ route('contact_path') }}">Contact</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
