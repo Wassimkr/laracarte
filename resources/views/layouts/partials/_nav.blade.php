@@ -6,7 +6,7 @@
   
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li>
           <a class="nav-link" href="{{ route('root_path') }}">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
